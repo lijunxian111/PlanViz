@@ -46,12 +46,10 @@
 
 ## <a name="datasets"></a>📦 Datasets
 
-<table border="0">
-  <tr>
-    <td><img src="figs/distribution.png" width="300"></td>
-    <td><img src="figs/theme.png" width="300"></td>
-  </tr>
-</table>
+<div>
+    <img src="figs/distribution.png" width="300">
+    <img src="figs/theme.png" width="300">
+</div>
 
 
 ## <a name="citation"></a>📎 Citation
