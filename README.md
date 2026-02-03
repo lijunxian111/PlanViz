@@ -53,11 +53,6 @@
 
 ## <a name="testing"></a>📄 Testing  
 
-We show the steps of testing your model on our benchmark.  
-1. python model_eval/eval_all.py --data_name ```one dataset name``` --model_name ```your model name```
-2. python qwen_eval_larger_api.py --task ```gen or edit``` --path ```/path/to/jsonl_files``` --mode ```correctness, visual or efficiency```
-3. python score.py --input_path ```evaluation results from MLLM```
-
 ## <a name="results"></a>🔎 Results
 
 We achieve impressive performance on editing and generation tasks in PlanViz.
@@ -78,7 +73,15 @@ We achieve impressive performance on editing and generation tasks in PlanViz.
 </p>
 </details>
 
+<details open>
+<summary>Qualitative Results (click to expand)</summary>
 
+- Results in Fig. 6 of the main paper
+
+<p align="center">
+  <img width="900" src="figs/qualitive.png">
+</p>
+<details>
 
 
 ## <a name="citation"></a>📎 Citation
