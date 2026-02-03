@@ -37,3 +37,16 @@
 - [ ] Release test data.
 - [ ] Provide WebUI.
 - [ ] Provide HuggingFace demo.
+
+## <a name="citation"></a>📎 Citation
+
+If you find the code helpful in your research or work, please cite the following paper(s).
+
+```
+@article{li2026planviz,
+  title={PlanViz: Evaluating Planning-Oriented Image Generation and Editing for Computer-Use Tasks},
+  author={Li, Junxian and Liu, Kai and Chen, Leyang and Wang, Weida and Wang, Zhixin and Xu, Jiaqi and Li, Fan and Pei, Renjing and Kong, Linghe and Zhang, Yulun},
+  title={arXiv},
+  year={2026}
+}
+```
