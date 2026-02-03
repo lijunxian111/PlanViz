@@ -46,7 +46,7 @@
 
 ## <a name="datasets"></a>📦 Datasets
 
-![](figs/dataset.png)
+![](figs/distribution.png)  ![](figs/theme.png)
 
 ## <a name="citation"></a>📎 Citation
 
