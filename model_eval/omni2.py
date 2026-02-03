@@ -321,12 +321,12 @@ def main(args: argparse.Namespace, root_dir: str) -> None:
 weight_dtype = torch.bfloat16
 accelerator = Accelerator(mixed_precision='bf16')
 pipeline = OmniGen2Pipeline.from_pretrained(
-        '/data2/user/junxianli/model_ckpts/OmniGen2',
+        '/path/to/model_ckpts/OmniGen2',
         torch_dtype=weight_dtype,
         trust_remote_code=True,
     )
 pipeline.transformer = OmniGen2Transformer2DModel.from_pretrained(
-            '/data2/user/junxianli/model_ckpts/OmniGen2',
+            '/path/to/model_ckpts/OmniGen2',
             subfolder="transformer",
             torch_dtype=weight_dtype,
         )
@@ -361,8 +361,4 @@ def eval_omni2(image, prompt, edit=False):
 if __name__ == "__main__":
     img = eval_omni2(None,'A cute cat')
     img.save('test_omni.png')
-    """
-    root_dir = os.path.abspath(os.path.join(__file__, os.path.pardir))
-    args = parse_args()
-    main(args, root_dir)
-    """
+    
