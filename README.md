@@ -31,3 +31,9 @@
 ![](figs/pipeline.png)
 
 ---
+
+## 🔖 TODO
+
+- [ ] Release test data.
+- [ ] Provide WebUI.
+- [ ] Provide HuggingFace demo.
