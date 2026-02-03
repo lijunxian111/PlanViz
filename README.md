@@ -81,7 +81,7 @@ We achieve impressive performance on editing and generation tasks in PlanViz.
 <p align="center">
   <img width="900" src="figs/qualitive.png">
 </p>
-<details>
+</details>
 
 
 ## <a name="citation"></a>📎 Citation
