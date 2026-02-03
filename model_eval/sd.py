@@ -5,10 +5,9 @@ import gc
 
 seed = 42
 torch.manual_seed(seed)
-# 如果使用 GPU，设置 CUDA 的随机种子
 torch.cuda.manual_seed(seed)
 
-pipe = StableDiffusion3Pipeline.from_pretrained("/data2/user/junxianli/model_ckpts/sd-3.5-large", torch_dtype=torch.bfloat16, trust_remote_code=True)
+pipe = StableDiffusion3Pipeline.from_pretrained("/path/to/model_ckpts/sd-3.5-large", torch_dtype=torch.bfloat16, trust_remote_code=True)
 pipe = pipe.to("cuda")
 
 def count_params(module):
@@ -26,7 +25,7 @@ def eval_sd35(org_image, prompt, edit=False):
         gc.collect()
         torch.cuda.empty_cache()
         pipe = StableDiffusion3Img2ImgPipeline.from_pretrained(
-            "/data2/user/junxianli/model_ckpts/sd-3.5-large",
+            "/path/to/model_ckpts/sd-3.5-large",
             torch_dtype=torch.float16
         ).to("cuda")
         #init_image = Image.open(org_image).convert("RGB")
@@ -47,5 +46,5 @@ def eval_sd35(org_image, prompt, edit=False):
     return image
 
 if __name__ == "__main__":
-    img = eval_sd35('/data2/user/junxianli/uni_bench/test.png', 'Add a girl.', True)
+    img = eval_sd35('/path/to/uni_bench/test.png', 'Add a cat.', True)
     img.save('sd2.png')
