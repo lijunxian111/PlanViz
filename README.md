@@ -9,4 +9,4 @@
 </div>  
 
 
-[project] [arXiv] [[supplementary material]()] [dataset]
+[project] [arXiv] [[supplementary material](https://github.com/lijunxian111/PlanViz/releases/tag/v1/arxiv-supple.pdf)] [dataset]
