@@ -150,6 +150,6 @@ def eval_bagel(image, prompt, edit=False, think=False):
     return res_img
 
 if __name__ == "__main__":
-    eval_bagel(None, 'Generate a beautiful small girl for me.')
+    eval_bagel(None, 'Generate a beautiful cat for me.')
 
     
