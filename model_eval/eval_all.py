@@ -1,19 +1,17 @@
 import numpy as np
 import json
 import argparse
-#from qwen_image import eval_qwen_image
-#from bagel import eval_bagel
 import os
 
 ds_name = {
-    "travel_plan_gen":"/data2/user/junxianli/uni_bench/map/generation/map_gen.json",
-    "travel_plan_edit":"/data2/user/junxianli/uni_bench/map/editing/map_editing_prompts.json",
-    "process_plan_gen": "/data2/user/junxianli/uni_bench/diagram/generation/diagram_gen.json",
-    "process_plan_edit":"/data2/user/junxianli/uni_bench/diagram/editing/diagram_edit.json",
-    "ui_gen": "/data2/user/junxianli/uni_bench/UI/generation/ui_generation.json",
-    "ui_gen_diff": "/data2/user/junxianli/uni_bench/UI/generation/ui_generation_diff.json",
-    'ui_edit': "/data2/user/junxianli/uni_bench/UI/editing/ui_edit.json",
-    "random_style": "/data2/user/junxianli/uni_bench/random_style.json"
+    "travel_plan_gen":"/path/to/uni_bench/map/generation/map_gen.json",
+    "travel_plan_edit":"/path/to/uni_bench/map/editing/map_editing_prompts.json",
+    "process_plan_gen": "/path/to/uni_bench/diagram/generation/diagram_gen.json",
+    "process_plan_edit":"/path/to/uni_bench/diagram/editing/diagram_edit.json",
+    "ui_gen": "/path/to/uni_bench/UI/generation/ui_generation.json",
+    "ui_gen_diff": "/path/to/uni_bench/UI/generation/ui_generation_diff.json",
+    'ui_edit': "/path/to/uni_bench/UI/editing/ui_edit.json",
+    "random_style": "/path/to/uni_bench/random_style.json"
 }
 
 
@@ -391,7 +389,6 @@ def eval(args, generation_hyper=None):
     return
 
 if __name__ == "__main__":
-    # when bagel, choose bagel, thinking, edit or gen
     parser = argparse.ArgumentParser(description="This is a simple argparse example")
 
     parser.add_argument('--data_name', type=str, help="evaluation_data_name", default="")
