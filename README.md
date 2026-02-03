@@ -51,7 +51,14 @@
     <img src="figs/theme.png" width="300">
 </div>
 
-## <a name="testing"></a>📄 Testing
+## <a name="testing"></a>📄 Testing  
+
+We show the steps of testing your model on our benchmark.  
+1. python model_eval/eval_all.py --data_name ```one dataset name``` --model_name ```your model name```
+2. python qwen_eval_larger_api.py --task ```gen or edit``` --path ```/path/to/jsonl_files``` --mode ```correctness, visual or efficiency```
+3. python score.py --input_path ```evaluation results from MLLM```
+
+## <a name="results"></a>🔎 Results
 
 ## <a name="citation"></a>📎 Citation
 
