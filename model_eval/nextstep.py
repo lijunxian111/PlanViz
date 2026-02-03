@@ -1,7 +1,6 @@
 import torch
 from transformers import AutoTokenizer, AutoModel
 import sys
-sys.path.append('/data2/user/junxianli/')
 from PIL import Image
 
 # NextStep_1_Large_Edit
@@ -9,9 +8,7 @@ from PIL import Image
 from model_ckpts.NextStep_1_Large_Edit.models.gen_pipeline import NextStepPipeline
 from model_ckpts.NextStep_1_Large_Edit.utils.aspect_ratio import center_crop_arr_with_buckets
 
-HF_HUB = "/data2/user/junxianli/model_ckpts/NextStep_1_Large"
-# /data2/user/junxianli/model_ckpts/NextStep_1_Large_Edit
-# /data2/user/junxianli/model_ckpts/NextStep_1_Large
+HF_HUB = "/path/to/model_ckpts/NextStep_1_Large"
 
 # load model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained(HF_HUB, local_files_only=True, trust_remote_code=True)
