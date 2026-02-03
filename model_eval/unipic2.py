@@ -8,12 +8,10 @@ from diffusers import FlowMatchEulerDiscreteScheduler, AutoencoderKL
 
 seed = 42
 torch.manual_seed(seed)
-# 如果使用 GPU，设置 CUDA 的随机种子
 torch.cuda.manual_seed(seed)
 # Load model components
-# /data2/user/junxianli/model_ckpts/UniPic2-Metaquery-9B
-# /data2/user/junxianli/model_ckpts/UniPic2-MetaQuery-GRPO-9B
-pretrained_model_name_or_path = "/data2/user/junxianli/model_ckpts/UniPic2-Metaquery-9B"
+
+pretrained_model_name_or_path = "/path/to/model_ckpts/UniPic2-Metaquery-9B"
 
 def fix_longer_edge(x, image_size, factor=32):
     """Resize image while maintaining aspect ratio (from the editing script)."""
@@ -37,12 +35,12 @@ vae = AutoencoderKL.from_pretrained(
 
 # Load Qwen2.5-VL model
 lmm = Qwen2_5_VLForConditionalGeneration.from_pretrained(
-    "/data2/user/junxianli/model_ckpts/Qwen2.5-VL-7B-Instruct",
+    "/path/to/model_ckpts/Qwen2.5-VL-7B-Instruct",
     trust_remote_code=True,
     torch_dtype=torch.bfloat16,
     attn_implementation="flash_attention_2").cuda()
 
-processor = Qwen2_5_VLProcessor.from_pretrained("/data2/user/junxianli/model_ckpts/Qwen2.5-VL-7B-Instruct", trust_remote_code=True)
+processor = Qwen2_5_VLProcessor.from_pretrained("/path/to/model_ckpts/Qwen2.5-VL-7B-Instruct", trust_remote_code=True)
 processor.chat_template = processor.chat_template.replace(
     "{% if loop.first and message['role'] != 'system' %}<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n{% endif %}",
     "")
@@ -159,5 +157,5 @@ def eval_unipic(image, prompt, edit=False):
         return image
 
 if __name__ == "__main__":
-    img = gen_image('a sexy and lovely girl wearing a skirt')
+    img = gen_image('a cute cat')
     img.save('unipic.png')
