@@ -63,4 +63,7 @@ If you find the code helpful in your research or work, please cite the following
   title={arXiv},
   year={2026}
 }
-```
+```  
+
+## <a name="acknowledgements"></a>💡 Acknowledgements
+This project is built based on numerous model repositories. Thanks [UmniBench](https://umnibench.github.io) for research ideas.
