@@ -4,7 +4,7 @@ from anysd.src.model import AnySDPipeline, choose_expert
 from anysd.train.valid_log import download_image
 from anysd.src.utils import choose_book, get_experts_dir
 
-expert_file_path = "/data2/user/junxianli/model_ckpts/AnySD/experts/" #get_experts_dir(repo_id="/data2/user/junxianli/model_ckpts/AnySD")
+expert_file_path = "/path/to/model_ckpts/AnySD/experts/" #get_experts_dir(repo_id="/path/to/model_ckpts/AnySD")
 
 book_dim, book = choose_book('all')
 task_embs_checkpoints = expert_file_path + "task_embs.bin"
@@ -34,7 +34,7 @@ def eval_anyedit(image, prompt):
     return images
 
 if __name__ == "__main__":
-    image = eval_anyedit('/data2/user/junxianli/uni_bench/test.png','Make the cat black.')
+    image = eval_anyedit('/path/to/uni_bench/test.png','Make the cat black.')
     image.save('anyedit.png')
     """
     expert_file_path = get_experts_dir(repo_id="WeiChow/AnySD")
