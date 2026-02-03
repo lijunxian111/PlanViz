@@ -159,7 +159,7 @@ def pipe_img_edit(model, input_img, prompt, steps=50, txt_cfg=6.0, img_cfg=1.5, 
         images = model.generate_img(cond=cond, no_both_cond=no_both_cond, no_txt_cond=no_txt_cond, **gen_kwargs)
     return images
 
-model, loading_info = AutoModelForCausalLM.from_pretrained('/data2/user/junxianli/model_ckpts/Ovis-U1-3B',
+model, loading_info = AutoModelForCausalLM.from_pretrained('/path/to/model_ckpts/Ovis-U1-3B',
                                                 torch_dtype=torch.bfloat16,
                                                 output_loading_info=True,
                                                 trust_remote_code=True
@@ -181,7 +181,7 @@ def eval_ovis(image, prompt, edit=False):
     return images[0]
 
 if __name__ == "__main__":
-    prompt = "A cute and sexy small girl"
+    prompt = "A cute cat"
     img = eval_ovis(None, prompt, edit=False)
     print(len(img))
     print(type(img[0]))
