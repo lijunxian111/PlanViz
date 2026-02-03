@@ -1,32 +1,5 @@
 # templates for evaluation
 
-
-TEMPLATE_MLLM_AS_JUDGE = """You are a professional judge for image generation, editing tasks. Given the original image, the edited image and the reference image in order, please evaluate the following generated image based on the criteria below. For each criterion, assign an integer score. Provide a short explanation for each score given. When evaluating, you can refer to the reference image, but do not use it as a strict guideline.
-
-Original Question: {}
-
-Correctness
-Evaluate how well the generated image reflects the requested keypoints. Score according to how many key points are satisfied. For instance, if 2 key points are satisfied, the score is 2. If no key points are satisfied, the score is 0. If all key points are satisfied, the score is equal to the number of key points.
-
-Keypoints: {}
-
-Consistency with the Original Image
-Evaluate if the generated image retains the key details and characteristics of the original image. This includes objects, colors, texts, and overall composition. Score between 0 and 5, where 0 means no consistency and 5 means perfect consistency.
-
-Efficiency (Unnecessary Elements)
-Evaluate if the generated image includes any elements or details that were not necessary or requested in the prompt. This can include extra objects, background elements, or any distracting features. Score between 0 and 5, where 0 means many unnecessary elements and 5 means no unnecessary elements.
-
-Your answer should be in the following format:
-Correctness: score 
-Explanation of correctness: 
-
-Consistency with the Original Image: score 
-Explanation of consistency:
-
-Efficiency: score 
-Explanation of efficiency:
-"""
-
 TEMPLATE_CORRECTNESS_EDITING = """You are professional for judging image editing tasks.
 
 ## Requirements:
