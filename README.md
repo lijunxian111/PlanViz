@@ -46,7 +46,7 @@
 
 ## <a name="datasets"></a>📦 Datasets
 
-<div>
+<div style="text-align: center;">
     <img src="figs/distribution.png" width="300">
     <img src="figs/theme.png" width="300">
 </div>
