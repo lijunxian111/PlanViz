@@ -2,7 +2,6 @@ import torch
 import argparse
 import sys 
 import gc
-sys.path.append('/data2/user/junxianli/uni_bench/model_eval')
 from HiDream_I1.hi_diffusers import HiDreamImagePipeline
 from HiDream_I1.hi_diffusers import HiDreamImageTransformer2DModel
 from HiDream_I1.hi_diffusers.schedulers.fm_solvers_unipc import FlowUniPCMultistepScheduler
@@ -11,10 +10,7 @@ from transformers import LlamaForCausalLM, PreTrainedTokenizerFast
 from accelerate import Accelerator
 from accelerate import infer_auto_device_map, dispatch_model
 
-#accelerator = Accelerator(
-    #mixed_precision="bf16",
-    #cpu=True
-#)
+
 
 #device = accelerator.device
 
@@ -22,8 +18,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--model_type", type=str, default="full")
 args = parser.parse_args()
 model_type = args.model_type
-MODEL_PREFIX = "/data2/user/junxianli/model_ckpts"
-LLAMA_MODEL_NAME = "/data/pretrained/LLama-3.1-8B-Instruct"
+MODEL_PREFIX = "/path/to/model_ckpts"
+LLAMA_MODEL_NAME = "/path/to/LLama-3.1-8B-Instruct"
 
 # Model configurations
 MODEL_CONFIGS = {
