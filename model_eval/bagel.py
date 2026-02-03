@@ -28,7 +28,7 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
 def eval_bagel(image, prompt, edit=False, think=False):
-    model_path = "/data2/user/junxianli/model_ckpts/Bagel"  # Download from https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT
+    model_path = "/path/to/model_ckpts/Bagel"  # Download from https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT
 
     # LLM config preparing
     llm_config = Qwen2Config.from_json_file(os.path.join(model_path, "llm_config.json"))
