@@ -46,7 +46,7 @@
 
 ## <a name="datasets"></a>📦 Datasets
 
-<table>
+<table border="0">
   <tr>
     <td><img src="figs/distribution.png" width="300"></td>
     <td><img src="figs/theme.png" width="300"></td>
