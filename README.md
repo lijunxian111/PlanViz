@@ -25,3 +25,9 @@
 ![](figs/example.png)
 
 ---
+
+### Pipeline
+
+![](figs/pipeline.png)
+
+---
