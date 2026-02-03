@@ -11,8 +11,6 @@ if __name__ == "__main__":
     score = 0.
     cnt = 0.
     for line in data:
-        #if "Correctness" not in line['evaluation_out'][0]:
-            #print(line['evaluation_out'][0])
         if isinstance(line['evaluation_out'], list):
             line['evaluation_out'] = line['evaluation_out'][0]
         try:
