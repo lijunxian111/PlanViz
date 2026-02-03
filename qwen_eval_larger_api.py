@@ -1,4 +1,3 @@
-#from transformers import Qwen3VLForConditionalGeneration, AutoProcessor
 import json
 import torch
 from transformers import modeling_utils
@@ -14,9 +13,8 @@ import base64
 import re, json
 import pandas as pd
 
-api_key = "sk-0111f4d9f75c4523ba42c2e9b9540e3a"
+api_key = "sk-xxxx"
 client = OpenAI(
-    # 若没有配置环境变量，请用百炼API Key将下行替换为：api_key="sk-xxx"
     api_key=api_key,
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
@@ -29,7 +27,7 @@ def image_to_base64(image_path):
 def eval_qa(messages):
     #image_base64 = image_to_base64(image)
     completion = client.chat.completions.create(
-        model="qwen3-vl-235b-a22b-instruct",  # 此处以qwen-vl-plus为例，可按需更换模型名称。模型列表：https://help.aliyun.com/zh/model-studio/getting-started/models
+        model="qwen3-vl-235b-a22b-instruct",  # model names
         messages=messages
         )
     print(completion.model_dump_json())
@@ -77,10 +75,7 @@ if __name__ == "__main__":
     parser.add_argument('--verbose', action='store_true', help="Increase output verbosity")
 
     args = parser.parse_args()
-
-    #task = 'edit'
-    #path = '/data2/user/junxianli/uni_bench/results/travel_plan_edit_omnigen2.json'
-    #mode = 'correctness'
+    
     data = open(args.path, 'r')
     data = json.load(data)
     score_lst = []
@@ -133,8 +128,7 @@ if __name__ == "__main__":
             line['evaluation_out'] = output_text
             score_lst.append(line)
         print(f"Eval Finished for [{i}]")
-        #eval(prompt, [line['res_path']])
-    #eval('Describe this image!', '/data2/user/junxianli/uni_bench/map/editing/org_images/london.png','')
+
     store_path = args.path.split('/')[-1].replace('.json',f'_{args.mode}_after_score.json')
     with open('output_jsons/'+store_path, 'w') as writer:
         json.dump(score_lst, writer, ensure_ascii=False, indent=4)
