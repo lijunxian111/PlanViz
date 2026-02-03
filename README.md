@@ -60,6 +60,27 @@ We show the steps of testing your model on our benchmark.
 
 ## <a name="results"></a>🔎 Results
 
+We achieve impressive performance on editing and generation tasks in PlanViz.
+
+<details open>
+<summary>Quantitative Results (click to expand)</summary>
+
+- Results in Tab. 3 of the main paper
+
+<p align="center">
+  <img width="900" src="figs/table1.png">
+</p>
+
+- Results in Tab. 4 of the main paper
+
+<p align="center">
+  <img width="900" src="figs/table2.png">
+</p>
+</details>
+
+
+
+
 ## <a name="citation"></a>📎 Citation
 
 If you find the code helpful in your research or work, please cite the following paper(s).
