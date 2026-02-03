@@ -369,11 +369,6 @@ def eval(args, generation_hyper=None):
             try:
                 content = eval_wan(img, line['prompt'], args.model_name)
                 content.save(f'results/{args.model_name}/{args.data_name}/{i}.png')
-                #if len(content) == 0:
-                    #continue
-                #elif len(content) == 1:
-                    #res_img_link = content[0]
-                    #os.system(f"curl -L -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36' -o results/{args.model_name}/{args.data_name}/{i}.png '{res_img_link}'")
                 print(f"Successfully Generate [{i+1}]")
                 data[i]['id'] = i+1
                 data[i]['res_path'] = f'results/{args.model_name}/{args.data_name}/{i}.png'
