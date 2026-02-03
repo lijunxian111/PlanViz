@@ -3,15 +3,8 @@ from diffusers import Step1XEditPipelineV1P2
 from diffusers.utils import load_image
 from RegionE import RegionEHelper
 
-pipe = Step1XEditPipelineV1P2.from_pretrained("/data2/user/junxianli/model_ckpts/Step1X-Edit-v1p2", trust_remote_code=True, torch_dtype=torch.bfloat16)
+pipe = Step1XEditPipelineV1P2.from_pretrained("/path/to/model_ckpts/Step1X-Edit-v1p2", trust_remote_code=True, torch_dtype=torch.bfloat16)
 pipe.to("cuda")
-
-# Import the RegionEHelper, optional, for faster inference
-"""
-regionehelper = RegionEHelper(pipe)
-regionehelper.set_params()   # default hyperparameter
-regionehelper.enable()
-"""
 
 def eval_step1x(image, prompt, edit=True, think=False):
     print("=== processing image ===")
@@ -37,7 +30,7 @@ def eval_step1x(image, prompt, edit=True, think=False):
     return pipe_output.final_images[0]
 
 print("=== processing image ===")
-image = load_image("/data2/user/junxianli/uni_bench/sd2.png").convert("RGB")
+image = load_image("/path/to/uni_bench/sd2.png").convert("RGB")
 prompt = "add a ruby pendant on the girl's neck."
 enable_thinking_mode=False
 enable_reflection_mode=False
@@ -59,4 +52,3 @@ for image_idx in range(len(pipe_output.images)):
         print(pipe_output.best_info[image_idx])
 pipe_output.final_images[0].save(f"0001-final.jpg", lossless=True)
 
-#regionehelper.disable()
