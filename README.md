@@ -1,6 +1,6 @@
 # PlanViz: Evaluating Planning-Oriented Image Generation and Editing for Computer-Use Tasks  
 
-[Junxian Li](https://lijunxian111.github.io), [Kai Liu](https://kai-liu.cn), Leyang Chen, [Weida Wang](), [Zhixin Wang](https://scholar.google.com/citations?user=tZS6bPMAAAAJ&hl=en&oi=sra), [Jiaqi Xu](https://scholar.google.com/citations?hl=en&user=oWvJUfoAAAAJ&view_op=list_works&sortby=pubdate), [Fan Li](https://scholar.google.com/citations?hl=en&user=DRnHw6sAAAAJ), [Renjing Pei](https://scholar.google.com/citations?hl=en&user=zEEMPUUAAAAJ&view_op=list_works&sortby=pubdate), [Linghe Kong](https://scholar.google.com/citations?hl=en&user=-wm2X-8AAAAJ&view_op=list_works&sortby=pubdate), and [Yulun Zhang](https://yulunzhang.com), "PlanViz: Evaluating Planning-Oriented Image Generation and Editing for Computer-Use Tasks", arXiv 2026  
+[Junxian Li](https://lijunxian111.github.io), [Kai Liu](https://kai-liu.cn), Leyang Chen, [Weida Wang](https://davidweidawang.github.io/), [Zhixin Wang](https://scholar.google.com/citations?user=tZS6bPMAAAAJ&hl=en&oi=sra), [Jiaqi Xu](https://scholar.google.com/citations?hl=en&user=oWvJUfoAAAAJ&view_op=list_works&sortby=pubdate), [Fan Li](https://scholar.google.com/citations?hl=en&user=DRnHw6sAAAAJ), [Renjing Pei](https://scholar.google.com/citations?hl=en&user=zEEMPUUAAAAJ&view_op=list_works&sortby=pubdate), [Linghe Kong](https://scholar.google.com/citations?hl=en&user=-wm2X-8AAAAJ&view_op=list_works&sortby=pubdate), and [Yulun Zhang](https://yulunzhang.com), "PlanViz: Evaluating Planning-Oriented Image Generation and Editing for Computer-Use Tasks", arXiv 2026  
 
 <div>
 <a href="https://github.com/lijunxian111/PlanViz/releases" target='_blank' style="text-decoration: none;"><img src="https://img.shields.io/github/downloads/lijunxian111/PlanViz/total?color=green&style=flat"></a>
@@ -40,7 +40,7 @@
 
 ## 🔗 Contents
 1. [Datasets](#datasets)
-2. Testing
+2. [Testing](#testing)
 3. [Results](#results)
 4. [Acknowledgements](#acknowledgements)
 
@@ -51,6 +51,7 @@
     <img src="figs/theme.png" width="300">
 </div>
 
+## <a name="testing"></a>📄 Testing
 
 ## <a name="citation"></a>📎 Citation
 
