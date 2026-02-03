@@ -28,7 +28,7 @@ if torch.cuda.is_available():
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
-model_path = "/data2/user/junxianli/model_ckpts/Janus-4o"
+model_path = "/path/to/model_ckpts/Janus-4o"
 vl_chat_processor: VLChatProcessor = VLChatProcessor.from_pretrained(model_path)
 tokenizer = vl_chat_processor.tokenizer
 vl_gpt: MultiModalityCausalLM = AutoModelForCausalLM.from_pretrained(
@@ -212,14 +212,7 @@ def text_and_image_to_image_generate(input_prompt, input_image_path, output_path
         visual_img[:, :, :] = dec
 
         return PIL.Image.fromarray(visual_img[0])
-        """
-        output_images = []
-        for i in range(parallel_size):
-            save_path = output_path.replace('.png','') + f'_{i}.png'
-            PIL.Image.fromarray(visual_img[i]).save(save_path)
-            output_images.append(save_path)
-        return output_images
-        """
+        
 
 # Run
 def eval_janus4o(image, prompt, edit=False):
