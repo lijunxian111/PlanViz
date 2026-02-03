@@ -10,3 +10,9 @@
 
 
 [project] [arXiv] [[supplementary material](https://github.com/lijunxian111/PlanViz/releases/tag/v1/arxiv-supple.pdf)] [dataset]
+
+
+#### 🔥🔥🔥 News
+
+- **2026-02-03:** This repo is released.
+
