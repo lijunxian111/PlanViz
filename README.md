@@ -46,8 +46,13 @@
 
 ## <a name="datasets"></a>📦 Datasets
 
-| <img src="figs/distribution.png" width="45%"> | <img src="figs/theme.png" width="45%"> |
-|:---:|:---:|
+<table>
+  <tr>
+    <td><img src="figs/distribution.png" width="300"></td>
+    <td><img src="figs/theme.png" width="300"></td>
+  </tr>
+</table>
+
 
 ## <a name="citation"></a>📎 Citation
 
