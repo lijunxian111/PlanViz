@@ -6,10 +6,13 @@
 <a href="https://github.com/lijunxian111/PlanViz/releases" target='_blank' style="text-decoration: none;"><img src="https://img.shields.io/github/downloads/lijunxian111/PlanViz/total?color=green"></a>
 <a href="https://github.com/lijunxian111/PlanViz" target='_blank' style="text-decoration: none;"><img src="https://visitor-badge.laobi.icu/badge?page_id=lijunxian111/PlanViz"></a>
 <a href="https://github.com/lijunxian111/PlanViz/stargazers" target='_blank' style="text-decoration: none;"><img src="https://img.shields.io/github/stars/lijunxian111/PlanViz"></a>
+<a href="">
+    <img src="https://img.shields.io/badge/Paper-arXiv-red?logo=arxiv&logoSvg">
+  </a>
 </div>  
 
 
-[project] [arXiv] [[supplementary material](https://github.com/lijunxian111/PlanViz/releases/tag/v1/arxiv-supple.pdf)] [dataset]
+[project] [[supplementary material](https://github.com/lijunxian111/PlanViz/releases/tag/v1/arxiv-supple.pdf)] [dataset]
 
 
 #### 🔥🔥🔥 News
