@@ -14,11 +14,12 @@
 </div>  
 
 
-[project] [[supplementary material](https://github.com/lijunxian111/PlanViz/releases/tag/v1/arxiv-supple.pdf)] [dataset]
+[project] [[supplementary material](https://github.com/lijunxian111/PlanViz/releases/tag/v1/arxiv-supple.pdf)] [[dataset](https://huggingface.co/datasets/Duke-de-Artois/PlanViz)]
 
 
 #### 🔥🔥🔥 News
 
+- **2026-10-10:** Breaking! Benchmark data is released.  
 - **2026-02-03:** This repo is released.
 
 
