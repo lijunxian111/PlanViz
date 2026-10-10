@@ -61,7 +61,7 @@ We show the data distribution and hot topics of our benchmark.
 
 ## <a name="testing"></a>📄 Testing  
 
-TBD
+Use [this hf repo](https://huggingface.co/datasets/Duke-de-Artois/PlanViz) for testing data and ```codes``` here for evaluation.  
 
 ## <a name="results"></a>🔎 Results
 
