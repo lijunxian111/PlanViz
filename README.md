@@ -42,7 +42,7 @@
 
 ## 🔖 TODO
 
-- [<img src="https://img.shields.io/badge/%E2%9C%93-2ea44f?style=flat-square">] Release test data.
+- [<img src="https://img.shields.io/badge/%E2%9C%93-7A9B76?style=flat" height="16">] Release test data.
 - [ ] Provide HuggingFace demo.
 
 ## 🔗 Contents
