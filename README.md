@@ -42,7 +42,7 @@
 
 ## 🔖 TODO
 
-- [<img src="https://img.shields.io/badge/Status-%E2%9C%93%20Available-brightgreen">] Release test data.
+- [<img src="https://img.shields.io/badge/%E2%9C%93-brightgreen">] Release test data.
 - [ ] Provide HuggingFace demo.
 
 ## 🔗 Contents
