@@ -10,6 +10,8 @@
 <a href="https://arxiv.org/abs/2602.06663">
     <img src="https://img.shields.io/badge/Paper-arXiv-red?logo=arxiv&logoSvg">
   </a>
+<a href="https://huggingface.co/datasets/Duke-de-Artois/PlanViz" target="_blank">
+  <img src="https://img.shields.io/badge/huggingface-repo-yellow?logo=huggingface&logoColor=white"></a>
 <a href="https://github.com/lijunxian111/PlanViz/stargazers" target='_blank' style="text-decoration: none;"><img src="https://img.shields.io/github/stars/lijunxian111/PlanViz"></a>
 </div>  
 
